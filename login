@@ -1,0 +1,56 @@
+<!--Opening the ejs tags for including header file-->
+<!DOCTYPE html>
+<!-- Opening HTML Tags-->
+<html>
+	<!-- Opening head Tags-->
+<head>
+	<!-- Opening head Tags-->
+	<title>CRC Auto Assigner Login Form</title>
+	<div class="jumbotron">
+		<h1>CRC Auto Assigner Login Form</h1>
+	  </div>
+</head>
+<!-- Opening body Tag -->
+<body>
+
+<!-- Creating a form where action will
+	be on "/" and the method will be "POST" -->
+<form action="/login" method="POST">
+	<table>
+        <tr>
+        <td><label>staffId: </label></td>
+        <td><input type="text" placeholder="User_01234" name="staffId"></td>
+        </tr>
+		<tr>
+			<td><label>Division: </label></td>
+			<td><select name="division">
+				<option value="RNP">RNP</option>
+				<option value="BBTAC">BBTAC</option>
+				<option value="DTV">DTV</option>
+				<option value="SMARTDESK">SMARTDESK</option>
+			  </select></td>
+		</tr>
+		<tr>
+			<td><label>Date: </label></td>
+			<td><input type="date" placeholder="Date" name="date"></td>
+		</tr>
+		<tr>
+			<td><label>starttime: </label></td>
+			<td><input type="time" value='08:00' placeholder="hrs:mins" name="starttime"></td>
+		</tr><tr>
+			<td><label>endtime: </label></td>
+			<td><input type="time" value='20:00' placeholder="hrs:mins" name="endtime"></td>
+		</tr><tr>
+			<td><label>Shift: </label></td>
+			<td><select name="shift">
+				<option value="SHIFT">SHIFT</option>
+				<option value="OT">OT</option>
+			  </select></td>
+		</tr>
+	</table>	
+	<br><br>
+	<!-- Creating the parameter Email as type= "text"-->
+	<button>Submit</button>
+</form>
+<!--Opening the ejs tags for including footer file-->
+
